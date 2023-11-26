@@ -70,7 +70,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>location:</strong>
-                    <input type="text" id="location" name="location" value="{{ $location->name }}" class="form-control" placeholder="location">
+                    <input type="text" id="location" name="location" value="{{ $location->location }}" class="form-control" placeholder="location">
                     @error('location must be')
                      <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror
@@ -99,8 +99,18 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <div class="form-group">
+                                <strong>name:</strong>
+                                <input type="text" id="name" name="name" value="{{ $location->name }}" class="form-control" placeholder="capacity">
+                                @error('capacity must be a number')
+                                 <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                                @enderror
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
                                 <strong>latitude:</strong>
-                                <input type="text" id="lat" name="latitude" " class="form-control">
+                                <input type="text" id="lat" name="latitude" value="{{ $location->latitude }}" class="form-control">
                                 @error('capacity must be a number')
                                  <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                                 @enderror
@@ -109,7 +119,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>longtitude:</strong>
-                    <input type="text" id="lng" name="longtitude"  class="form-control">
+                    <input type="text" id="lng" name="longtitude" value="{{ $location->longtitutde }}" class="form-control">
                     @error('address')
                      <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror
@@ -118,7 +128,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>contact</strong>
-                    <input type="text" id="contact" name="contac" value="{{ $location->contact }}" class="form-control" placeholder="contact">
+                    <input type="text" id="contact" name="contact" value="{{ $location->contact }}" class="form-control" placeholder="contact">
                     @error('contact required')
                      <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror

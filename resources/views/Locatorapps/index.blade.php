@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Laravel 10 CRUD Tutorial From Scratch</title>
+    <title>Location Map Record</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
 </head>
@@ -16,10 +16,12 @@
                 <h2>Evacuation Record Database Locations</h2>
             </div>
             <div class="pull-right mb-2">
-                <a class="btn btn-success" href="{{ route('Locatorapps.create') }}"> Create Company</a>
+                <a class="btn btn-success" href="{{ route('Locatorapps.create') }}"> Create Maprecords</a>
+                <a class="btn btn-success" href="{{ url('/') }}"> home</a>
             </div>
         </div>
     </div>
+
 
     @if ($message = Session::get('success'))
         <div class="alert alert-success">
@@ -33,6 +35,7 @@
             <th>Location</th>
             <th>address</th>
             <th>capacity</th>
+            <th>Personel Name</th>
             <th>latitute</th>
             <th>longtitude</th>
             <th>contact</th>
@@ -44,6 +47,7 @@
             <td>{{ $location->location }}</td>
             <td>{{ $location->address }}</td>
             <td>{{ $location->capacity }}</td>
+            <td>{{ $location->name }}</td>
             <td>{{ $location->latitude }}</td>
             <td>{{ $location->longtitude }}</td>
             <td>{{ $location->contact }}</td>

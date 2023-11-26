@@ -50,34 +50,20 @@ class MaprecordsController extends Controller
 
     public function update(Request $request, $id)
     {
-        $request->validate([
-            'Location' => 'required',
-            'address' => 'required',
-            'capacity' => 'required',
-            'name' => 'required',
-            'latitude' => 'required',
-            'longtitude' => 'required',
-            'contact' => 'required'
-        ]);
-
         $location = Location::find($id);
 
-        // $company->name = $request->name;
-        // $company->email = $request->email;
-        // $company->address = $request->address;
-
         $location->update([
-            'Location' => $request->location,
+            'location' => $request->location,
             'address' => $request->address,
             'capacity' => $request->capacity,
             'name' => $request->name,
-            'latitude' => $request->latitute,
+            'latitude' => $request->latitude,
             'longtitude' => $request->longtitude,
             'contact' => $request->contact,
         ]);
 
         return redirect()->route('Locatorapps.index')
-            ->with('success', 'Company Has Been updated successfully');
+            ->with('success', 'The location and details of inforamtion was updated successfully');
     }
 
     public function destroy(location $location, $id)

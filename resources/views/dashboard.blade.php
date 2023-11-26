@@ -2,9 +2,11 @@
     <x-slot name="header">
         <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <h2 class="text-xl font-semibold leading-tight">
-                {{ __('Dashboard') }}
+                <a href="{{ url('/') }}">
+                {{ __('home') }}</a>
             </h2>
             <div class="container mt-2">
         </div>
+        <div class="container mt-2">
     </x-slot>
 </x-app-layout>
