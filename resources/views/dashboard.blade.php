@@ -7,6 +7,5 @@
             </h2>
             <div class="container mt-2">
         </div>
-        <div class="container mt-2">
     </x-slot>
 </x-app-layout>

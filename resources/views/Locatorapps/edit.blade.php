@@ -119,7 +119,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>longtitude:</strong>
-                    <input type="text" id="lng" name="longtitude" value="{{ $location->longtitutde }}" class="form-control">
+                    <input type="text" id="lng" name="longtitude" value="{{ $location->longtitude }}" class="form-control">
                     @error('address')
                      <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror
