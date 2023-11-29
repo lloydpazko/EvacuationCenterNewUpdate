@@ -20,9 +20,15 @@
         </div>
     </div>
 
-    <script src="{{ asset('js/app.js') }}"></script>
+    @if(session('status'))
+    <div class="alert alert-success mb-1 mt-1">
+        {{ session('status') }}
+    </div>
+  @endif
+  <script src="{{ asset('js/app.js') }}"></script>
     <form action="{{ route('Locatorapps.store') }}" method="POST" enctype="multipart/form-data">
-    @csrf
+        @csrf
+        @method('post')
 
         <div id="map" style="height:700px; width: 800px;" class="my-3"></div>
 
