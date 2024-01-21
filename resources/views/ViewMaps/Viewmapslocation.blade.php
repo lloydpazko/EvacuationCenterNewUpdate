@@ -113,10 +113,10 @@
                         })
                     }
                 </script>
-                </section>
                 <section>
-                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP22ElEZUl6SNXexS9AeXY1MvekmcW2xs&callback=initMap"
-                        type="text/javascript"></script>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP22ElEZUl6SNXexS9AeXY1MvekmcW2xs&callback=initMap"
+                            type="text/javascript"></script>
+                </section>
                         <div class="container mt-2">
             <div class="row">
                     <div class="col-lg-12 margin-tb">
