@@ -7,9 +7,41 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
 </head>
 <body>
+    <div class="container mt-2">
+<div id="map" style="height:700px; width: 1100px;" class="my-3"></div>
+        <script>
+            let map;
+            function initMap() {
+                map = new google.maps.Map(document.getElementById("map"), {
+                    center: { lat: 18.3551, lng: 121.6420 },
+                    zoom: 17,
+                    scrollwheel: true,
+                });
 
-<div class="container mt-2">
+                const uluru = { lat: -34.397, lng: 150.644 };
+                let marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map,
+                    draggable: true
+                });
 
+                google.maps.event.addListener(marker,'position_changed',
+                    function (){
+                        let lat = marker.position.lat()
+                        let lng = marker.position.lng()
+                        $('#lat').val(lat)
+                        $('#lng').val(lng)
+                    })
+
+                google.maps.event.addListener(map,'click',
+                function (event){
+                    pos = event.latLng
+                    marker.setPosition(pos)
+                })
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP22ElEZUl6SNXexS9AeXY1MvekmcW2xs&callback=initMap"
+                type="text/javascript"></script>
 <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
@@ -17,7 +49,7 @@
             </div>
             <div class="pull-right mb-2">
                 <a class="btn btn-success" href="{{ route('Locatorapps.create') }}"> Create Maprecords</a>
-                <a class="btn btn-success" href="{{ url('/') }}"> home</a>
+                <a class="btn btn-success" href="{{ url('/') }}"> HOME</a>
             </div>
         </div>
     </div>
@@ -33,12 +65,12 @@
         <tr>
             <th>S.No</th>
             <th>Location</th>
-            <th>address</th>
+            <th>Address</th>
             <th>capacity</th>
             <th>Personel Name</th>
-            <th>latitute</th>
-            <th>longtitude</th>
-            <th>contact</th>
+            <th>Latitute</th>
+            <th>Longtitude</th>
+            <th>Contact</th>
             <th width="280px">Action</th>
         </tr>
         @foreach ($Locatorapps as $location)

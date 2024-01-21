@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Evacuation locator SYSTEM, Contact Us">
     <meta name="description" content="">
-    <title>Evacuation locator APP</title>
+    <title>Evacuation Center Locator APP</title>
     <link rel="stylesheet" href="{{ asset('nicepage.css') }}" media="screen">
 <link rel="stylesheet" href="{{ asset('Maps.css') }}" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
@@ -46,6 +46,9 @@
 </li>
 @else
 <li class="u-nav-item">
+    <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" rel="nofollow" style="padding: 10px 20px;" href="{{ route('ViewMaps.Viewmapslocation') }}">View Maps Evacuation Facilities</a>
+</li>
+<li class="u-nav-item">
     <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" rel="nofollow" style="padding: 10px 20px;" href="{{ route('login') }}">Login</a>
 </li>
 @if (Route::has('register'))
@@ -78,23 +81,25 @@
       </div></header>
     <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="256" data-image-height="256" id="sec-02a7">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h1 class="u-text u-text-default u-title u-text-1">Evacuation locator APP</h1>
-        <p class="u-large-text u-text u-text-default u-text-variant u-text-2">Power by Aparrianos.</p>
+        <h1 class="u-text u-text-default u-title u-text-1">Evacuation Center Locator APP</h1>
+        <p class="u-large-text u-text u-text-default u-text-variant u-text-2">Powered by Aparrianos</p>
 
       </div>
     </section>
 
     <section class="u-align-center u-clearfix u-valign-bottom-lg u-valign-bottom-md u-valign-bottom-sm u-valign-bottom-xs u-section-2" id="carousel_f0cc">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-text u-text-1">Mission</h2>
+        <h2 class="u-text u-text-3">Mission</h2>
         <div class="u-border-7 u-border-palette-2-base u-line u-line-horizontal u-line-1"></div>
         <p class="u-text u-text-2"> Zero Loss of Life, Effectively Respond To and Recover From
 the Effects of Disaster, Natural or Man-Made, In Nature </p>
-        <h2 class="u-text u-text-3">vission</h2>
+        <h2 class="u-text u-text-3">Vision</h2>
+        <div class="u-border-7 u-border-palette-2-base u-line u-line-horizontal u-line-1"></div>
         <p class="u-text u-text-4">&nbsp; Safer, Adaptive and Disaster- Resilient Community Towards
 Sustainable Development&nbsp;&nbsp;</p>
         <h2 class="u-text u-text-5">Goal</h2>
-        <p class="u-text u-text-6">&nbsp; ​
+        <div class="u-border-7 u-border-palette-2-base u-line u-line-horizontal u-line-1"></div>
+        <p class="u-text u-text-2">&nbsp; ​
 To effectively provide a more responsive and accessible
 delivery of quality social services to communities for a God-loving, healthy
 and empowered citizens
@@ -118,15 +123,15 @@ growth, progressive economy and liveable community. </p>
 </g></svg></span>
                           <h5 class="u-text u-text-grey-40 u-text-7">Address:</h5>
                           <p class="u-text u-text-8">Aparri,Cagayan Philipines</p>
-                          <p class="u-text u-text-9">Sample text. Click to select the Text Element.</p>
-                          <p class="u-text u-text-10">Sample text. Click to select the Text Element.</p>
+                          <p class="u-text u-text-9">Municipal Disaster Risk Reduction and Management Office</p>
+                          <p class="u-text u-text-10">Municipal Governement of Aparri</p>
                         </div>
                       </div>
                       <div class="u-container-style u-layout-cell u-palette-5-dark-3 u-size-30 u-layout-cell-2">
                         <div class="u-container-layout u-valign-middle u-container-layout-2"><span class="u-border-3 u-border-grey-50 u-icon u-icon-circle u-text-grey-40 u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 479.058 479.058" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-219f"></use></svg><svg class="u-svg-content" viewBox="0 0 479.058 479.058" id="svg-219f"><path d="m434.146 59.882h-389.234c-24.766 0-44.912 20.146-44.912 44.912v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159l-200.355 173.649-200.356-173.649c1.769-.736 3.704-1.159 5.738-1.159zm0 299.411h-389.234c-8.26 0-14.971-6.71-14.971-14.971v-251.648l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"></path></svg></span>
                           <h5 class="u-align-center u-text u-text-grey-40 u-text-11">Email:</h5>
-                          <a href="https://nicepage.com/c/full-width-slider-html-templates" class="u-border-active-none u-border-hover-none u-btn u-btn-rectangle u-button-style u-none u-text-body-alt-color u-text-hover-palette-2-base u-btn-1">hello@company.com</a>
-                          <a href="https://nicepage.review" class="u-border-active-none u-border-hover-none u-btn u-btn-rectangle u-button-style u-none u-text-body-alt-color u-text-hover-palette-2-base u-btn-2">support@company.com</a>
+                          <a href="https://nicepage.com/c/full-width-slider-html-templates" class="u-border-active-none u-border-hover-none u-btn u-btn-rectangle u-button-style u-none u-text-body-alt-color u-text-hover-palette-2-base u-btn-1">aparri@gmail.com</a>
+                          <a href="https://nicepage.review" class="u-border-active-none u-border-hover-none u-btn u-btn-rectangle u-button-style u-none u-text-body-alt-color u-text-hover-palette-2-base u-btn-2">cics.gmail.com</a>
                         </div>
                       </div>
                     </div>
@@ -138,7 +143,7 @@ growth, progressive economy and liveable community. </p>
 </g>
 </g></svg></span>
                           <h5 class="u-text u-text-grey-40 u-text-12">Call us:</h5>
-                          <p class="u-text u-text-13">1 (234) 567-891 <br>1 (234) 987-654
+                          <p class="u-text u-text-13"> +63 997 2404 984 <br> +63 956 6542 894
                           </p>
                         </div>
                       </div>

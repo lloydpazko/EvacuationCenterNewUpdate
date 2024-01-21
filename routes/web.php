@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ViewMapUserOnlyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -63,3 +64,4 @@ Route::group([
 
 require __DIR__ . '/auth.php';
 
+Route::get('/ViewMaps', [ViewMapUserOnlyController::class, 'ViewLocations'])->name('ViewMaps.Viewmapslocation');

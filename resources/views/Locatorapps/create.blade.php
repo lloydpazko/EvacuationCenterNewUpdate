@@ -31,7 +31,6 @@
         @method('post')
 
         <div id="map" style="height:700px; width: 800px;" class="my-3"></div>
-
         <script>
             let map;
             function initMap() {
@@ -42,28 +41,28 @@
                 });
 
                 const uluru = { lat: -34.397, lng: 150.644 };
-                let marker = new google.maps.Marker({
-                    position: uluru,
-                    map: map,
-                    draggable: true
-                });
+                        let marker = new google.maps.Marker({
+                            position: uluru,
+                            map: map,
+                            draggable: true
+                        });
 
-                google.maps.event.addListener(marker,'position_changed',
-                    function (){
-                        let lat = marker.position.lat()
-                        let lng = marker.position.lng()
-                        $('#lat').val(lat)
-                        $('#lng').val(lng)
-                    })
+                        google.maps.event.addListener(marker,'position_changed',
+                            function (){
+                                let lat = marker.position.lat()
+                                let lng = marker.position.lng()
+                                $('#lat').val(lat)
+                                $('#lng').val(lng)
+                            })
 
-                google.maps.event.addListener(map,'click',
-                function (event){
-                    pos = event.latLng
-                    marker.setPosition(pos)
-                })
-            }
+                        google.maps.event.addListener(map,'click',
+                        function (event){
+                            pos = event.latLng
+                            marker.setPosition(pos)
+                        })
+                    }
         </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnBjjGSKtk91Wmq4GWfflKGTjgcxMoh0s&callback=initMap"
                 type="text/javascript"></script>
   @if(session('status'))
     <div class="alert alert-success mb-1 mt-1">

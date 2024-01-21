@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit Location details</h2>
+                <h2>Edit Location Details</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('Locatorapps.index') }}" enctype="multipart/form-data"> Back</a>
@@ -29,8 +29,8 @@
     <form action="{{ route('Locatorapps.update',$location->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
-
-        <div id="map" style="height:700px; width: 800px;" class="my-3"></div>
+        <div class="form">
+        <div id="map" style="height:700px; width: 1200px;" class="my-3"></div>
 
         <script>
             let map;
@@ -63,10 +63,11 @@
                 })
             }
         </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP22ElEZUl6SNXexS9AeXY1MvekmcW2xs&callback=initMap"
                 type="text/javascript"></script>
+        </div>
 
-         <div class="row">
+         
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>location:</strong>
@@ -76,7 +77,7 @@
                     @enderror
                 </div>
             </div>
-            <div class="row">
+            
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>address:</strong>
@@ -86,7 +87,7 @@
                         @enderror
                     </div>
                 </div>
-                <div class="row">
+                
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
                             <strong>Capacity:</strong>
@@ -96,7 +97,7 @@
                             @enderror
                         </div>
                     </div>
-                    <div class="row">
+                    
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <div class="form-group">
                                 <strong>name:</strong>
@@ -106,7 +107,7 @@
                                 @enderror
                             </div>
                         </div>
-                    <div class="row">
+
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <div class="form-group">
                                 <strong>latitude:</strong>
@@ -116,6 +117,7 @@
                                 @enderror
                             </div>
                         </div>
+
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>longtitude:</strong>
@@ -125,6 +127,7 @@
                     @enderror
                 </div>
             </div>
+
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>contact</strong>
